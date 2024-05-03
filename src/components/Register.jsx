@@ -33,15 +33,15 @@ const Register = () => {
 
     useEffect(() => {
         const result = USER_REGEX.test(user);
-        console.log(result);
-        console.log(user);
+        // console.log(result);
+        // console.log(user);
         setValidName(result);
     }, [user]);
 
     useEffect(() => {
         const result = PWD_REGEX.test(pwd);
-        console.log(result);
-        console.log(pwd);
+        // console.log(result);
+        // console.log(pwd);
         setValidPwd(result);
         const match = pwd === matchPwd;
         setValidMatch(match);
@@ -69,9 +69,9 @@ const Register = () => {
                     withCredentials: true
                 }
             );
-            console.log(response.data);
+            // console.log(response.data);
             // console.log(response.accessToken);
-            console.log(JSON.stringify(response));
+            // console.log(JSON.stringify(response));
             setSuccess(true);
             // clear state and input fields
             setUser('');

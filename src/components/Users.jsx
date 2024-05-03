@@ -18,7 +18,7 @@ const Users = () => {
                     signal: controller.signal
                 });
                 const userNames = response.data.map(user => user.username);
-                console.log(response.data);
+                // console.log(response.data);
                 isMounted && setUsers(userNames);
             } catch (err) {
                 if(isMounted){
